@@ -79,7 +79,55 @@ Un [video](https://youtu.be/5I3Ei69I40s) de como funciona el KCM.
 Dependiendo del problema se puede variar esta medición a una fórmula más apta para los datos que se tienen. Acá puede revisar otras dos opciones para medir centros.
 Pueden revisar este [enlace](https://www.i2tutorials.com/top-machine-learning-interview-questions-and-answers/what-is-the-difference-between-euclidean-manhattan-and-hamming-distances/) para conocer diferentes fórmulas para cálcular centroides.
 
+El paso 2 continua hasta que se miden las distancias de todos los datos hasta que se crean los dos clusters, basados en los centroides que se determinaron inicialmente.
 
+**El paso 3**: Encontrar los K centroides. Ahora nos toca tomar los datos en los clusters y determinar un nuevo centroide. Uno para cada cluster que se creo con los nuevos centroides se puede volver al paso dos y volver a estimar las distancias de los puntos a cada centroide. Esto puede cambiar los tamaños de los clusters y mover dados de un cluster a otro. Esto porque los centroides han cambiado. Esto se repite hasta que el algoritmo converje.
+
+## Función de Error
+Sumando todos las distancias cuadráticas al cluster cercano obtenemos un medida del total de distancias o una medida de error. El error se puede interpretar como la función de error del numero de cluster K que tengamos. En el caso extremo de que sea K = N tendríamos un cluster por cada punto de datos y eso probocaria un error de 0.
+![El Codo]()
+
+Como se puede apreciar en la función va decreciendo conforme aumentan los K clusters. El descenso se controla al llegar K=3, puesto que 4,5,6 tienen un decenso más paulatino. Por lo que podemos escoger 3 como el número idoneo para los clusters. No siempre será fácil.
+
+## Ejemplo
+Vamos a volver al ejemplo de los Iris pero ahora con este mismo algoritmo, recuerda hacer una copia en tu drive del [ejemplo](https://colab.research.google.com/drive/1sJDA4nfNVEbMZNv2HY-DiA8lndtV1Hl2)
+
+Ejemplo [trivial](https://colab.research.google.com/drive/1vnGaLTHTuVpy0wstnnl0I4Gelqrybogm)
+
+Quieres ir profundizar más revisa en este [enlace](https://developers.google.com/machine-learning/clustering). Se profundiza en el tipo de centroides y agrupaciones que se pueden hacer, como preparar los datos y como ejecutar un algoritmo más robusto.
+
+# Naïve Bayes Classifier o Clasificador Bayeseano
+Este algoritmo lo podemos denominar como de aprendizaje supervisado. Se tiene ejemplos de información que representa las diferentes clases que tenemos. Utilizando el teorema de Bayes nosotros calculamos la probabilidad de nuevos datos en cada clase.
+
+## Posibles Usos
+* Clasificación de datos usualmente texto y analisis de sentimientos
+* NLP para ayudar a una computadora a entender al humano
+* Detección de correo spam
+* Clasificar que parte de que una noticia es buena o mala
+* Predecir en que dirección unos tweets en twitter van a influenciar una elección o referendo
+* Determinar si tweets tristes son de un bot RUSO
+
+## Cómo funciona?
+PSeudo código:
+* Convertir el conjunto de datos a tabla de frecuencias
+* Crear una tabla de probabilidad calculando las correspondientes a diversos eventos
+* Utilizando Naïve Bayes se calcula la probabilidad posterior de cada clase
+* La clase con la probabilidad posterior más alta es el resultado de la predicción
+
+## Puntos fuertes del algoritmo
+* Fácil y rápida forma de predecir clases para problemas binarios y multiclase
+* En casos donde se presume independecia de las variables, es una mejor opción a otros modelos de clasificación incluso con poco dato de entrenamiento
+
+## Puntos débiles del algoritmo
+* Son conocidos por ser pobres estimadores, no se deben tomar muy en serio las probabilidades que se obtienen
+* La presunción de independencia Naïve muy probablemente no refleje como son los datos en el mundo real
+* Cuando se encuentra una característica no observada en los datos de entrenamiento, esta tendrá una probabilidad de cero, volviendola inútil para hacer predicciones.
+
+## Ejemplo
+
+
+# Material complementario recomendado
+[Guia de aprendizaje curso de google developer para Aprendizaje Automático](https://developers.google.com/machine-learning/crash-course)
 
 
 
