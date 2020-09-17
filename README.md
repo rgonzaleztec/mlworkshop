@@ -1,7 +1,7 @@
 # Técnicas de Machine Learning
 Repositorio que contiene ejercicios de algoritmos de machine learning y definiciones sobre las diferentes técnicas
 
-# K Nearest Neighbours
+# K Nearest Neighbors
 Los K Vecinos Ceranos esta es una técnica supervisada, se toman datos clasificados representados en un vector de caracteristicas. Por ejemplo tenemos puntos de colores en un espacio, las dimensiones de ese espacio serían el número de caracteristicas y los colores serían las categorias. Se miden las distancias entre los nuevos datos y los datos de los K cercanos que ya hemos clasificado.
 
 ## Posibles usos
@@ -51,6 +51,33 @@ Vamos a entender un poco como trabaja KNN utilizando un ejemplo basado en scikit
 El siguiente ejemplo lo abres y lo copias a tu drive de tu cuenta personal.
 [Ejemplo](https://colab.research.google.com/drive/10Lt0KakjCIirvRRu_4eAx1O3HjIRSXAz)
 
+
+# K Means Clustering
+Es una técnica no supervisada de aprendizaje. Contamos con muchos puntos individuales de datos, cada uno representado por vectores. Cada entrada en el vector representa una caracteristica. La diferencia es que esta información no esta etiquetada o clasificada con anterioridad.
+
+## Posibles usos
+* Agrupaciones de información no etiquetada pero con caracteristicas similares
+* Clasificar compradores mediante su historial de compras
+* Ubicación optima de parqueos en una ciudad
+* Optimización de talla de cuello y largo de brazo de camisas
+* Agrupación de imágenes sin que esten preclasificadas
+
+## Cómo Funciona?
+Tenemos un conjunto de datos de N individuales, cada uno tiene asociado M- vectores dimensionales representando M caracteristicas, por lo que x a la potencia de n para n= 1 a N. Cada entrada en el vector representa una cantidad númerica diferente.
+
+Por ejemplo cada vector podría representar un único hogar, el primer elemento en cada vector trae ingresos, el segundo número de carros, asi sucesibamente con las M dimensiones, la M-esima podría ser número de laptops.
+
+Un [video](https://youtu.be/5I3Ei69I40s) de como funciona el KCM.
+
+## Algoritmo K Means
+**Paso 0**: Escalar. Este es un paso típico para cada algoritmo sobre los datos que vamos a utilizar. Esto porque vamos a trabajar con medidas de distancias.
+
+**Paso 1**: Seleccionar algunos centros. Se debe alimentar el algoritmo con centros para los K clusters. Podría ser seleccionando K de N vectores para iniciar, o solo generar K aleatorios vectores. Al menos debería tenerse el mismo tamaño de caracteristicas como de sets de datos escalados, ya sea en terminos de media y desviación estandar o de mínimos y máximos. Estos centros serán determinados de toda la población.
+
+**Paso 2**: Encontrar distancias de cada dato a los centros. Para cada punto de datos dentro del vector se debe medir la distancia desde el centroide hasta el punto para todos los K clusters. El tipo de medición que utilicemos depende del tipo problema que tengamos. Comúnmente se utiliza la fórmula de distancias eucledianas.
+
+Dependiendo del problema se puede variar esta medición a una fórmula más apta para los datos que se tienen. Acá puede revisar otras dos opciones para medir centros.
+Pueden revisar este [enlace](https://www.i2tutorials.com/top-machine-learning-interview-questions-and-answers/what-is-the-difference-between-euclidean-manhattan-and-hamming-distances/) para conocer diferentes fórmulas para cálcular centroides.
 
 
 
