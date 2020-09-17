@@ -85,7 +85,7 @@ El paso 2 continua hasta que se miden las distancias de todos los datos hasta qu
 
 ## Función de Error
 Sumando todos las distancias cuadráticas al cluster cercano obtenemos un medida del total de distancias o una medida de error. El error se puede interpretar como la función de error del número de cluster K que tengamos. En el caso extremo de que sea K = N tendríamos un cluster por cada punto de datos y eso provocaria un error de 0.
-![El Codo]()
+![El Codo](/imagenes/errorfuntion.png)
 
 Como se puede apreciar en la función va decreciendo conforme aumentan los K clusters. El descenso se controla al llegar K=3, puesto que 4, 5, 6 tienen un decenso más paulatino. Por lo que, podemos escoger 3 como el número idóneo para los clusters. No siempre será fácil.
 
