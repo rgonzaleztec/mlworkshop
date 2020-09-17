@@ -33,3 +33,15 @@ Tomar en cuenta: K pequeño podrías obtener un bajo bias pero una alta varianza
 * La clasificación de informacióm es un poco lenta
 * Se debe medir el nuevo punto contra todos los ya clasificados (lento)
 * Datos sesgados se produce cuando hay más puntos de una clase de las demás
+
+## Regresión
+Aunque KNN es utilizado para clasificación, puede también ser facilmente utilizado como una regresión.
+
+Ejemplos:
+
+* Utilizando funciones gausianas para las distancias
+* EncaEncajando en un hiperplano los K puntos de datos, lo anterior es una regresion linear local
+
+
+
+
