@@ -124,6 +124,10 @@ PSeudo código:
 * Cuando se encuentra una característica no observada en los datos de entrenamiento, esta tendrá una probabilidad de cero, volviendola inútil para hacer predicciones.
 
 ## Ejemplo
+Para este caso vamos a clasificar texto, ya que en estos casos buscamos palabras clave el Bayes se presta para este problema.
+[Cuaderno](https://colab.research.google.com/drive/1UaIlB8hCbyVrtPvXc58_3VEG4xrNYRsN)
+
+**Reto basado en tu ejemplo, intenta crear un reconocedor de spam o correo basura novato**
 
 
 # Material complementario recomendado
