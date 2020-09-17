@@ -42,6 +42,9 @@ Ejemplos:
 * Utilizando funciones gausianas para las distancias
 * EncaEncajando en un hiperplano los K puntos de datos, lo anterior es una regresion linear local
 
+## Video complementario
+Un video interesante para complementar sobre como crear un KNN desde cero. [Video](https://www.youtube.com/watch?v=hzOCDgfsSSQ)
+
 
 
 
