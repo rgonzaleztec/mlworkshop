@@ -45,6 +45,14 @@ Ejemplos:
 ## Video complementario
 Un video interesante para complementar sobre como crear un KNN desde cero. [Video](https://www.youtube.com/watch?v=hzOCDgfsSSQ)
 
+## Ejercicio de KNN para iris de flores
+Vamos a entender un poco como trabaja KNN utilizando un ejemplo basado en scikit-learn, que es una libreria que ya contiene un set de datos con IRIS de algunas flores.
+
+El siguiente ejemplo lo abres y lo copias a tu drive de tu cuenta personal.
+[Ejemplo](https://colab.research.google.com/drive/10Lt0KakjCIirvRRu_4eAx1O3HjIRSXAz)
+
+
+
 
 
 
