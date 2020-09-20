@@ -91,9 +91,9 @@ Sumando todos las distancias cuadráticas al cluster cercano obtenemos un medida
 Como se puede apreciar en la función va decreciendo conforme aumentan los K clusters. El descenso se controla al llegar K=3, puesto que 4, 5, 6 tienen un decenso más paulatino. Por lo que, podemos escoger 3 como el número idóneo para los clusters. No siempre será fácil.
 
 ## Ejemplo
-Vamos a volver al ejemplo de los Iris pero ahora con este mismo algoritmo, recuerda hacer una copia en tu Drive del [ejemplo](https://colab.research.google.com/drive/1sJDA4nfNVEbMZNv2HY-DiA8lndtV1Hl2)
+Vamos a volver al ejemplo de los Iris pero ahora con este mismo algoritmo, recuerda hacer una copia en tu Drive del [ejemplo](https://colab.research.google.com/drive/1sJDA4nfNVEbMZNv2HY-DiA8lndtV1Hl2?usp=sharing)
 
-Ejemplo [trivial](https://colab.research.google.com/drive/1vnGaLTHTuVpy0wstnnl0I4Gelqrybogm)
+Ejemplo [trivial](https://colab.research.google.com/drive/1vnGaLTHTuVpy0wstnnl0I4Gelqrybogm?usp=sharing)
 
 Quieres profundizar más en este tema, revisa en este [enlace](https://developers.google.com/machine-learning/clustering). Se profundiza en el tipo de centroides y agrupaciones que se pueden hacer, como preparar los datos y como ejecutar un algoritmo más robusto.
 
@@ -126,7 +126,7 @@ PSeudo código:
 
 ## Ejemplo
 Para este caso vamos a clasificar texto, ya que en estos casos buscamos palabras clave, el Bayes se presta para este problema.
-[Cuaderno](https://colab.research.google.com/drive/1UaIlB8hCbyVrtPvXc58_3VEG4xrNYRsN)
+[Cuaderno](https://colab.research.google.com/drive/1UaIlB8hCbyVrtPvXc58_3VEG4xrNYRsN?usp=sharing)
 
 **Reto basado en tu ejemplo, intenta crear un reconocedor de spam o correo basura novato**
 
