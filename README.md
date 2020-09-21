@@ -130,6 +130,9 @@ Para este caso vamos a clasificar texto, ya que en estos casos buscamos palabras
 
 **Reto basado en tu ejemplo, intenta crear un reconocedor de spam o correo basura novato**
 
+## Clasificación de Imágenes
+[Cuaderno](https://developers.google.com/machine-learning/practica/image-classification)
+
 
 # Material complementario recomendado
 [Guia de aprendizaje curso de google developer para Aprendizaje Automático](https://developers.google.com/machine-learning/crash-course)
