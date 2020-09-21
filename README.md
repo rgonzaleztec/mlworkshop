@@ -146,7 +146,7 @@ Por ejemplo x(n) =[metros cuadrados de la casa, numero de espacios de garaje, me
 
 Los métodos númericos no son necesarios si tenemos **regreción en una sola dimención**, lo contrario para en multiples dimenciones ya que requerimos estos métodos para modelos de más dimensiones. El **Descenso de gradiente por lotes** y **descenso de gradiente estocástico** requieren ambos de una función de minimización la misma puede , como se muestra en la imagen.
 
-Pueden ampliar sobre descenso en gradiente en el siguiente [enlace]{https://youtu.be/A6FiCDoz8_4}.
+Pueden ampliar sobre descenso en gradiente en el siguiente [enlace](https://youtu.be/A6FiCDoz8_4).
 
 ## Ejemplos
 
