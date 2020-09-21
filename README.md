@@ -35,7 +35,7 @@ Tomar en cuenta: con un K pequeño podrías obtener un bajo bias pero una alta v
 * Datos sesgados se produce cuando hay más puntos de una clase que de las demás.
 .
 ## Regresión
-Aunque KNN es utilizado para clasificación, puede también ser facilmente utilizado como una regresión.
+Aunque KNN es utilizado para clasificación, puede también ser fácilmente utilizado como una regresión.
 
 Ejemplos:
 
@@ -108,7 +108,7 @@ Este algoritmo lo podemos denominar como de aprendizaje supervisado. Se tiene ej
 * Predecir en que dirección unos tweets en twitter van a influenciar una elección o referendo.
 * Determinar si tweets tristes son de un bot RUSO.
 
-## Cómo funciona?
+## ¿Cómo funciona?
 PSeudo código:
 * Convertir el conjunto de datos a tabla de frecuencias.
 * Crear una tabla de probabilidad calculando las correspondientes a diversos eventos.
@@ -131,20 +131,20 @@ Para este caso vamos a clasificar texto, ya que en estos casos buscamos palabras
 **Reto basado en tu ejemplo, intenta crear un reconocedor de spam o correo basura novato**
 
 ## Métodos de Regresión
-Son técnicas de algoritmos supervisados. Estos tratan de explicar una variable dependiente en terminos de una independiente. Las variables independientes son númericas y las encajamos sobre una línea recta, polinomial o otra función para predecir la variable dependiente.Este método puede ser también utilizado para clasificación donde la variable dependiente usualmente son ceros y unos.
+Son técnicas de algoritmos supervisados. Estos tratan de explicar una variable dependiente en terminos de una independiente. Las variables independientes son númericas y las encajamos sobre una línea recta, polinomial o otra función para predecir la variable dependiente. Este método puede ser también utilizado para clasificación donde la variable dependiente usualmente son ceros y unos.
 
 ## Posibles usos
-* Encontrar relaciones numericas entre variables dependientes e independientes basadas en datos
-* Clasificación de datos basado en un conjunto de caracteristicas numéricas
-* Por ejemplo: encontrar la relación entre el numero de tomates en una planta, la temperatura ambiente y cuando deben ser regadas las plantas
+* Encontrar relaciones numéricas entre variables dependientes e independientes basadas en datos.
+* Clasificación de datos basado en un conjunto de características numéricas.
+* Por ejemplo: encontrar la relación entre el número de tomates en una planta, la temperatura ambiente y cuando deben ser regadas las plantas
 * Por ejemplo: Determinar la probabilidad de tener cáncer dado un estilo de vida ( cantidad de alcohol consumido, cigarros fumados, que tan amenudo visitas Amsterdan :))
 
-## Cómo funciona? en muchas dimensiones
-Se tienen **M variables independientes** que representan caracteristicas del objeto de estudio, para lo cual escribimos todas las X's como vectores. Por cada N puntos de datos tendremos la **variable independiente X elevado a la n** y tendremos la variable **dependiente y elevado a la n**. 
+## ¿Cómo funciona? en muchas dimensiones
+Se tienen **M variables independientes** que representan características del objeto de estudio, para lo cual escribimos todas las X's como vectores. Por cada N puntos de datos tendremos la **variable independiente X elevado a la n** y tendremos la variable **dependiente y elevado a la n**. 
 
-Por ejemplo x(n) =[metros cuadrados de la casa, numero de espacios de garaje, metros cuadrados de area verde] la y(n) = [ valor de la propiedad].
+Por ejemplo x(n) =[metros cuadrados de la casa, número de espacios de garaje, metros cuadrados de área verde] la y(n) = [ valor de la propiedad].
 
-Los métodos númericos no son necesarios si tenemos **regreción en una sola dimención**, lo contrario para en multiples dimenciones ya que requerimos estos métodos para modelos de más dimensiones. El **Descenso de gradiente por lotes** y **descenso de gradiente estocástico** requieren ambos de una función de minimización la misma puede , como se muestra en la imagen.
+Los métodos numéricos no son necesarios si tenemos **regreción en una sola dimención**, lo contrario para en múltiples dimenciones ya que requerimos estos métodos para modelos de más dimensiones. El **Descenso de gradiente por lotes** y **descenso de gradiente estocástico** requieren ambos de una función de minimización la misma puede , como se muestra en la imagen.
 
 Pueden ampliar sobre descenso en gradiente en el siguiente [enlace](https://youtu.be/A6FiCDoz8_4).
 
@@ -153,17 +153,17 @@ Pueden ampliar sobre descenso en gradiente en el siguiente [enlace](https://yout
 Estimación consumo de gasolina [cuaderno](https://colab.research.google.com/github/tensorflow/docs-l10n/blob/master/site/es-419/tutorials/keras/regression.ipynb?hl=es)
 
 ## Máquinas de soporte vectorial
-Es una técnica de clasificación de aprendizaje supervizado. Lo utilizamos para clasificar datos que se representan como vectores de caracteristicas. Esta técnica divide los datos de acuerdo a cual lado del hyper plano en el espacio de caracteristicas es al que el punto pertenece o se encuentra.
+Es una técnica de clasificación de aprendizaje supervizado. Lo utilizamos para clasificar datos que se representan como vectores de caracteristicas. Esta técnica divide los datos de acuerdo a cual lado del hyper plano en el espacio de características es al que el punto pertenece o se encuentra.
 
-## Para que se usa?
-* Clasificación basa en un conjunto de caracteristicas númericas
-* Identificar tipos de plantas utilizando caracteristicas de los pétalos
-* Estimar el riesgo de cancer de próstata de imagenes MRI (resonancia magnética)
-* Encontrar posibles clientes de mensiones en post de twitter
+## ¿Para qué se usa?
+* Clasificación basa en un conjunto de caracteristicas numéricas.
+* Identificar tipos de plantas utilizando caracteristicas de los pétalos.
+* Estimar el riesgo de cáncer de próstata de imágenes MRI (resonancia magnética).
+* Encontrar posibles clientes de mensiones en post de twitter.
 
-## Cómo funciona?
+## ¿Cómo funciona?
 Se utilizan márgenes para dividir los datos a clasificar. 
-**Márgenes duros(rígidos)** Como se aprecia en la imagen las dos clases y los márgenes que la dividen. Iniciando con una división con una linea(roja en la imagen), para separarlos. Con la linea se puede determinar a quien pertene un dato nuevo y sin clasificar que nos den. Mensionar que la mejor línea es la que tiene la distancia más larga entre esta y los puntos. Las lineas paralelas representan los márgenes y su distancia a la linea de divició.
+**Márgenes duros(rígidos)** Como se aprecia en la imagen las dos clases y los márgenes que la dividen. Iniciando con una división con una línea (roja en la imagen), para separarlos. Con la linea se puede determinar a quien pertene un dato nuevo y sin clasificar que nos den. Mencionar que la mejor línea es la que tiene la distancia más larga entre esta y los puntos. Las líneas paralelas representan los márgenes y su distancia a la línea de divición.
 
 ![SVM](/imagenes/svm1.png)
 
@@ -174,7 +174,7 @@ El siguiente ejemplo debes ejecutarlo para analizar como logra descubrir de quie
 
 
 ## Clasificación de Imágenes con convuluciones
-La clasificación de imagenes se aprovecha mucho del tema de convolución para poder encontrar los patrones que permitan por ejemplo clasificar imágenes.
+La clasificación de imágenes se aprovecha mucho del tema de convolución para poder encontrar los patrones que permitan por ejemplo clasificar imágenes.
 Las convulociones trabajan sobre filtros que se le colocan a las imágenes. Filtros de imágenes por convolución de matrice es como se aplica esto sobre una imagen que se cargo como una matriz.
 
 Un filtro de imagen es un procedimiento que se aplica a una imagen para resaltar o mejorar algunas características de la misma, para lograr esto se modifica la matriz que compone la imagen aplicándole un determinado procedimiento, en este tutorial estudiaremos el procedimiento llamado convolución de matrices.
